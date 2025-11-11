@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+/* ======== Estilos Globais ======== */
+body {
+    margin: 0;
+    font-family: Merriweather;
+    font-size: large;
+    background-color: #8a0e20;
+    color: white;
+    background-image: url(img/fundo.png);
+    background-size: 100%;
+}
+
+/* ======== Títulos ======== */
+h1 {
+    font-family: Merriweather;
+    color: #d3a72e;
+    margin-top: 15px;
+}
+
+h2 {
+    font-family: Merriweather;
+    margin-top: 0;
+    color: #d3a72e;
+}
+
+/* ======== Estrutura Principal ======== */
+main {
+    padding: 0 12.3%;
+}
+
+.container {
+    margin: auto;
+    max-width: 650px;
+}
+
+/* ======== Cartões ======== */
+.cartao {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+}
+
+.cartao:nth-child(odd) {
+    border: 3px double #ffffff;
+}
+
+.cartao:nth-child(even) {
+    border: 3px double #d3a72e;
+}
+
+.cartao:nth-child(odd) h2 {
+    color: #d3a72e;
+}
+
+.cartao:nth-child(even) h2 {
+    color: #ffffff;
+}
+
+/* ======== Links ======== */
+a {
+    font-family: Merriweather;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: calc(100% - 30px);
+    padding: 15px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+a:hover{
+    scale: 1.05;
+    transition: 0.3s;
+    opacity: 0.75;
+}
+.cartao:nth-child(odd) a {
+    background-color: #d3a72e;
+}
+
+.cartao:nth-child(even) a {
+    background-color: #ffffff;
+    color: #d3a72e;
+}
+
+hr{
+    border: 1px solid #ffffff;
+}
+.creditos{
+    text-align: center;
+}
+
+header p{
+    font-size: x-large;
+}
+
+/* ======== Imagem e Informações ======== */
+.cartao img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    max-width: 800px;
+    width: 100%;
+}
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ======== Responsividade ======== */
+@media screen and (max-width: 700px) {
+    .cartao {
+        margin-bottom: 20px;
+    }
+}
